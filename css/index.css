@@ -147,6 +147,7 @@ header {
   display: flex;
   justify-content: space-between;
   margin: 0;
+  padding: 20px;
   font-size: 3rem;
   background: #FB3640;
 }
@@ -161,6 +162,30 @@ header nav a {
 }
 header h1 {
   font-size: 2rem;
+}
+footer {
+  display: flex;
+  background: #FB3640;
+  color: #FFFFFF;
+  font-size: 2rem;
+}
+footer address {
+  padding: 1em;
+}
+footer ul {
+  display: flex;
+}
+footer ul li {
+  list-style-type: none;
+  padding: 1em;
+}
+footer ul li a {
+  text-decoration: none;
+  color: inherit;
+}
+footer p {
+  align-self: flex-end;
+  margin: 40px 0;
 }
 .container {
   width: 100%;
@@ -194,7 +219,6 @@ header h1 {
   padding: 50px;
 }
 .container .description .info-card .text-content p {
-  color: #FB3640;
   line-height: 1.5;
 }
 .container .description .info-card img {
@@ -208,14 +232,30 @@ header h1 {
   color: #FFFFFF;
 }
 .container .description .info-card:nth-of-type(even) h2 {
-  color: inherit;
+  color: #FFFFFF;
+}
+.container .description .info-card:nth-of-type(even) p {
+  color: #FFFFFF;
+}
+.container .description .info-card:nth-of-type(even) img {
+  -webkit-box-shadow: 0px 0px 292px -76px #FFFFFF;
+  -moz-box-shadow: 0px 0px 292px -76px #FFFFFF;
+  box-shadow: 0px 0px 292px -76px #FFFFFF;
 }
 .container .description .info-card:nth-of-type(odd) {
   background: #FFFFFF;
   color: #FB3640;
 }
 .container .description .info-card:nth-of-type(odd) h2 {
-  color: inherit;
+  color: #FB3640;
+}
+.container .description .info-card:nth-of-type(odd) p {
+  color: #FB3640;
+}
+.container .description .info-card:nth-of-type(odd) img {
+  -webkit-box-shadow: 0px 0px 292px -76px #FB3640;
+  -moz-box-shadow: 0px 0px 292px -76px #FB3640;
+  box-shadow: 0px 0px 292px -76px #FB3640;
 }
 .container .cta {
   display: inline-flex;
