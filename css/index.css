@@ -203,11 +203,6 @@ header h1 {
   width: 300px;
   margin: 0 auto;
 }
-.container .description .info-card button {
-  background: #FB3640;
-  padding: 100px;
-  font-size: 2.5rem;
-}
 .container .description .info-card:nth-of-type(even) {
   background: #0A2463;
   color: #FFFFFF;
@@ -221,4 +216,21 @@ header h1 {
 }
 .container .description .info-card:nth-of-type(odd) h2 {
   color: inherit;
+}
+.container .cta {
+  display: inline-flex;
+  margin: 50px 0;
+  flex-direction: column;
+}
+.container .cta .text-content {
+  width: 50%;
+  margin: 0 auto;
+  padding: 50px;
+}
+.container .cta .btn {
+  background: #FB3640;
+  color: #FFFFFF;
+  padding: 20px 40px;
+  font-size: 2.5rem;
+  width: 20%;
 }
