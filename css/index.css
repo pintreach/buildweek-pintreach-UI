@@ -233,4 +233,6 @@ header h1 {
   padding: 20px 40px;
   font-size: 2.5rem;
   width: 20%;
+  align-self: center;
+  margin-left: 20%;
 }
