@@ -210,13 +210,15 @@ header h1 {
 }
 .container .description .info-card:nth-of-type(even) {
   background: #0A2463;
-}
-.container .description .info-card:nth-of-type(even) p {
   color: #FFFFFF;
+}
+.container .description .info-card:nth-of-type(even) h2 {
+  color: inherit;
 }
 .container .description .info-card:nth-of-type(odd) {
   background: #FFFFFF;
-}
-.container .description .info-card:nth-of-type(odd) p {
   color: #FB3640;
+}
+.container .description .info-card:nth-of-type(odd) h2 {
+  color: inherit;
 }
