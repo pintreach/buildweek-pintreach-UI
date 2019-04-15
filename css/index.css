@@ -153,6 +153,7 @@ header {
 header nav {
   display: flex;
   padding: 16px;
+  justify-content: space-around;
 }
 header nav a {
   padding: 10px 20px;
@@ -178,4 +179,20 @@ header h1 {
   font-size: 3rem;
   font-weight: 600;
   font-style: oblique;
+  margin: 20px 0;
+  color: #0A2463;
+}
+.container .description .text-content {
+  margin: 50px 0;
+  padding: 30px;
+}
+.container .description .text-content p {
+  background: #0A2463;
+  color: #FB3640;
+  line-height: 2;
+}
+.container .description button {
+  background: #FB3640;
+  padding: 100px;
+  font-size: 2.5rem;
 }
