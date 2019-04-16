@@ -149,6 +149,10 @@ header {
   margin: 0;
   font-size: 2rem;
   background: #6195ED;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 2;
 }
 header img {
   width: 55%;
@@ -210,13 +214,15 @@ footer p {
 }
 .container {
   width: 100%;
-  margin: 0 auto;
+  margin: 5rem auto;
+  padding: 4rem 0;
   font-size: 3rem;
 }
 .container .intro {
   display: flex;
   flex-direction: column;
   margin: 9rem 3rem;
+  line-height: 1.5;
 }
 .container .intro h1 {
   font-size: 4rem;
