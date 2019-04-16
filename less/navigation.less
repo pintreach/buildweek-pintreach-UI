@@ -1,24 +1,29 @@
 // Navigation Styles here
 //escaped values
 @tablet: ~'(max-width: 815px)';
-@navBar: ~'(max-width: 615px)';
+@navBar: ~'(max-width: 630px)';
 header{
     display: flex;
     justify-content: space-between;
     margin: 0;
-    font-size: 2rem;
+    
     background: @mainColor;
     //sticky
     position: fixed;
     top: 0;
     width: 100%;
     z-index: 2;
-    
+    @media @navBar {
+        align-self: center;
+        justify-content: center;
+     
+    }
 
     img{
         width: 55%;
         height: 55%;
         max-width: 198px;
+        
     }
     .hamburger{
         display: none;
@@ -42,6 +47,7 @@ header{
             padding:0 2rem;
             align-self: center;
             color: @contrast2;
+            font-size: 2rem;
         }
     }
     

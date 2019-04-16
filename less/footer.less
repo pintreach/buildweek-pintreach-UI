@@ -3,7 +3,9 @@ footer {
   background: @mainColor;
   color: @contrast1;
   font-size: 2rem;
-
+  @media @tablet {
+    font-size: 1.6rem;
+}
   address {
     padding: 1em;
   }
@@ -16,6 +18,7 @@ footer {
       a {
         text-decoration: none;
         color: inherit;
+        
       }
     }
   }
