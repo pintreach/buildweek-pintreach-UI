@@ -151,8 +151,8 @@ header {
   background: #6195ED;
 }
 header img {
-  width: 75%;
-  height: 75%;
+  width: 55%;
+  height: 55%;
   max-width: 198px;
 }
 header .hamburger {
@@ -177,7 +177,8 @@ header nav {
   }
 }
 header nav a {
-  padding: 10px 20px;
+  padding: 0 2rem;
+  align-self: center;
   color: #E6FDFF;
 }
 header h1 {
@@ -220,7 +221,7 @@ footer p {
 .container .intro h1 {
   font-size: 4rem;
   font-weight: 600;
-  padding-bottom: 2rem;
+  padding-bottom: 5rem;
   color: black;
 }
 .container .intro p {
