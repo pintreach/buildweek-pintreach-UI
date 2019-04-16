@@ -159,20 +159,8 @@ header {
     justify-content: center;
   }
 }
-header img {
-  width: 55%;
-  height: 55%;
+header #logo {
   max-width: 198px;
-}
-header .hamburger {
-  display: none;
-}
-@media (max-width: 630px) {
-  header .hamburger {
-    display: flex;
-    width: 200px;
-    align-self: center;
-  }
 }
 header nav {
   display: flex;
@@ -226,8 +214,8 @@ footer p {
 .container {
   width: 100%;
   margin: 5rem auto 0 auto;
-  padding: 4rem 0;
-  font-size: 3rem;
+  padding: 4rem 0 0 0;
+  border-bottom: 1px solid #ccc;
 }
 .container .intro {
   display: flex;
@@ -256,6 +244,11 @@ footer p {
   margin: 20px 0;
   color: black;
 }
+@media (max-width: 600px) {
+  .container .description h2 {
+    font-size: 2.2rem;
+  }
+}
 .container .description .info-card {
   display: flex;
 }
@@ -270,7 +263,7 @@ footer p {
 }
 .container .description .info-card .text-content {
   width: 50%;
-  margin: 0 auto;
+  margin: auto;
   padding: 3rem;
 }
 @media (max-width: 900px) {
@@ -280,12 +273,13 @@ footer p {
 }
 .container .description .info-card .text-content p {
   line-height: 1.5;
+  font-size: 2rem;
 }
 .container .description .info-card img {
   align-self: center;
   height: 300px;
   width: 300px;
-  margin: 0 auto;
+  margin: 3rem auto;
 }
 @media (max-width: 900px) {
   .container .description .info-card img {
@@ -328,11 +322,17 @@ footer p {
 .container .cta .text-content {
   padding: 50px;
 }
+.container .cta .text-content h2 {
+  font-size: 3rem;
+}
+.container .cta .text-content p {
+  font-size: 2.5rem;
+}
 .container .cta .btn {
   background: #6195ED;
   color: #E6FDFF;
   padding: 2rem 4rem;
-  font-size: 2.5rem;
+  font-size: 2rem;
   width: 20%;
   align-self: center;
   margin-left: 20%;
@@ -350,14 +350,4 @@ footer p {
 }
 .container footer {
   background: #6195ED;
-}
-@media (max-width: 900px) {
-  .container footer {
-    font-size: 1.2rem;
-  }
-}
-@media (max-width: 600px) {
-  .container footer {
-    font-size: 0.8rem;
-  }
 }
