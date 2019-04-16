@@ -147,26 +147,46 @@ header {
   display: flex;
   justify-content: space-between;
   margin: 0;
-  padding: 20px;
-  font-size: 3rem;
-  background: #FB3640;
+  font-size: 2rem;
+  background: #6195ED;
+}
+header img {
+  width: 75%;
+  height: 75%;
+  max-width: 198px;
+}
+header .hamburger {
+  display: none;
+}
+@media (max-width: 615px) {
+  header .hamburger {
+    display: flex;
+    width: 200px;
+    align-self: center;
+  }
 }
 header nav {
   display: flex;
   padding: 16px;
+  flex-wrap: wrap;
   justify-content: space-around;
+}
+@media (max-width: 615px) {
+  header nav {
+    display: none;
+  }
 }
 header nav a {
   padding: 10px 20px;
-  color: white;
+  color: #E6FDFF;
 }
 header h1 {
   font-size: 2rem;
 }
 footer {
   display: flex;
-  background: #FB3640;
-  color: #FFFFFF;
+  background: #6195ED;
+  color: #F0F7EE;
   font-size: 2rem;
 }
 footer address {
@@ -195,12 +215,17 @@ footer p {
 .container .intro {
   display: flex;
   flex-direction: column;
-  margin: 40px;
+  margin: 9rem 3rem;
 }
 .container .intro h1 {
   font-size: 4rem;
   font-weight: 600;
-  font-style: oblique;
+  padding-bottom: 2rem;
+  color: black;
+}
+.container .intro p {
+  font-size: 2rem;
+  color: black;
 }
 .container .description.about-content {
   display: inline-flex;
@@ -211,11 +236,10 @@ footer p {
   font-weight: 600;
   font-style: oblique;
   margin: 20px 0;
-  color: #0A2463;
+  color: black;
 }
 .container .description .info-card {
   display: flex;
-  margin: 50px 0;
 }
 .container .description .info-card.team-card {
   display: inline-flex;
@@ -236,34 +260,30 @@ footer p {
   margin: 0 auto;
 }
 .container .description .info-card:nth-of-type(even) {
-  background: #0A2463;
-  color: #FFFFFF;
+  background: #6195ED;
+  color: #E6FDFF;
 }
 .container .description .info-card:nth-of-type(even) h2 {
-  color: #FFFFFF;
+  color: #E6FDFF;
 }
 .container .description .info-card:nth-of-type(even) p {
-  color: #FFFFFF;
+  color: #E6FDFF;
 }
 .container .description .info-card:nth-of-type(even) img {
-  -webkit-box-shadow: 0px 0px 292px -76px #FFFFFF;
-  -moz-box-shadow: 0px 0px 292px -76px #FFFFFF;
-  box-shadow: 0px 0px 292px -76px #FFFFFF;
+  box-shadow: rgba(32, 41, 50, 0.12) 0px 16px 48px;
 }
 .container .description .info-card:nth-of-type(odd) {
-  background: #FFFFFF;
-  color: #FB3640;
+  background: #E6FDFF;
+  color: black;
 }
 .container .description .info-card:nth-of-type(odd) h2 {
-  color: #FB3640;
+  color: black;
 }
 .container .description .info-card:nth-of-type(odd) p {
-  color: #FB3640;
+  color: black;
 }
 .container .description .info-card:nth-of-type(odd) img {
-  -webkit-box-shadow: 0px 0px 292px -76px #FB3640;
-  -moz-box-shadow: 0px 0px 292px -76px #FB3640;
-  box-shadow: 0px 0px 292px -76px #FB3640;
+  box-shadow: rgba(32, 41, 50, 0.12) 0px 16px 48px;
 }
 .container .cta {
   display: inline-flex;
@@ -276,8 +296,8 @@ footer p {
   padding: 50px;
 }
 .container .cta .btn {
-  background: #FB3640;
-  color: #FFFFFF;
+  background: #6195ED;
+  color: #E6FDFF;
   padding: 20px 40px;
   font-size: 2.5rem;
   width: 20%;
@@ -285,5 +305,5 @@ footer p {
   margin-left: 20%;
 }
 .container footer {
-  background: #ccc;
+  background: #6195ED;
 }

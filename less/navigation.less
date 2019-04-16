@@ -6,17 +6,35 @@ header{
     display: flex;
     justify-content: space-between;
     margin: 0;
-    padding: 20px;
-    font-size: 3rem;
-    background: @coralRed;
+    font-size: 2rem;
+    background: @mainColor;
+    img{
+        width: 75%;
+        height: 75%;
+        max-width: 198px;
+    }
+    .hamburger{
+        display: none;
+
+        @media @navBar {
+            display: flex;
+            width: 200px;
+            align-self: center;
+        }
+    }
     nav{
         display: flex;
         padding: 16px;
+        flex-wrap: wrap;
         justify-content: space-around;
+        @media @navBar {
+            display: none;
+
+        }
         a{
             padding: 10px 20px;
             
-            color: white;
+            color: @contrast2;
         }
     }
     

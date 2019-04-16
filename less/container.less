@@ -8,11 +8,16 @@
   .intro {
     display: flex;
     flex-direction: column;
-    margin: 40px;
+    margin: 9rem 3rem;
     h1 {
       font-size: 4rem;
       font-weight: 600;
-      font-style: oblique;
+      padding-bottom: 2rem;
+      color: black;
+    }
+    p{
+        font-size: 2rem;
+        color: black;
     }
   }
   .description {
@@ -26,12 +31,11 @@
       font-weight: 600;
       font-style: oblique;
       margin: 20px 0;
-      color: @madison;
+      color: black;
     }
     
     .info-card {
       display: flex;
-      margin: 50px 0;
       
       &.team-card{
         display: inline-flex;
@@ -45,7 +49,7 @@
         // }
         // &::nth-of-type(2){
         //     order: 2;
-        // } trying to get an alternating background
+        // } trying to get an
     } 
       
       .text-content {
@@ -66,33 +70,29 @@
         
       }
       &:nth-of-type(even) {
-        background: @madison;
-        color: @white;
+        background: @mainColor;
+        color: @contrast2;
         h2 {
-          color: @white;
+          color: @contrast2;
         }
         p{
-            color: @white;
+            color: @contrast2;
         }
         img{
-            -webkit-box-shadow: 0px 0px 292px -76px @white;
-            -moz-box-shadow: 0px 0px 292px -76px @white;
-            box-shadow: 0px 0px 292px -76px @white;
+            box-shadow: rgba(32, 41, 50, 0.12) 0px 16px 48px;
             }
       }
       &:nth-of-type(odd) {
-        background: @white;
-        color: @coralRed;
+        background: @contrast2;
+        color: black;
         h2 {
-          color: @coralRed;
+          color: black;
         }
         p{
-            color: @coralRed;
+            color: black;
         }
         img{
-        -webkit-box-shadow: 0px 0px 292px -76px @coralRed;
-        -moz-box-shadow: 0px 0px 292px -76px @coralRed;
-        box-shadow: 0px 0px 292px -76px @coralRed;
+            box-shadow: rgba(32, 41, 50, 0.12) 0px 16px 48px;
         }
       }
     }
@@ -108,8 +108,8 @@
       padding: 50px;
     }
     .btn {
-        background: @coralRed;
-        color: @white;
+        background: @mainColor;
+        color: @contrast2;
         padding: 20px 40px;
         font-size: 2.5rem;
         width: 20%;
@@ -118,7 +118,9 @@
       }
   }
   footer{
-      background: #ccc;
+      background: @mainColor;
+
+
   }
 }
 // -webkit-box-shadow: 0px 0px 292px -76px rgba(251,54,64,1);
