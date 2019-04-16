@@ -147,12 +147,17 @@ header {
   display: flex;
   justify-content: space-between;
   margin: 0;
-  font-size: 2rem;
   background: #6195ED;
   position: fixed;
   top: 0;
   width: 100%;
   z-index: 2;
+}
+@media (max-width: 630px) {
+  header {
+    align-self: center;
+    justify-content: center;
+  }
 }
 header img {
   width: 55%;
@@ -162,7 +167,7 @@ header img {
 header .hamburger {
   display: none;
 }
-@media (max-width: 615px) {
+@media (max-width: 630px) {
   header .hamburger {
     display: flex;
     width: 200px;
@@ -175,7 +180,7 @@ header nav {
   flex-wrap: wrap;
   justify-content: space-around;
 }
-@media (max-width: 615px) {
+@media (max-width: 630px) {
   header nav {
     display: none;
   }
@@ -184,6 +189,7 @@ header nav a {
   padding: 0 2rem;
   align-self: center;
   color: #E6FDFF;
+  font-size: 2rem;
 }
 header h1 {
   font-size: 2rem;
@@ -248,6 +254,11 @@ footer p {
 .container .description .info-card {
   display: flex;
 }
+@media (max-width: 900px) {
+  .container .description .info-card {
+    flex-direction: column;
+  }
+}
 .container .description .info-card.team-card {
   display: inline-flex;
   width: 49.5%;
@@ -255,7 +266,12 @@ footer p {
 .container .description .info-card .text-content {
   width: 50%;
   margin: 0 auto;
-  padding: 50px;
+  padding: 3rem;
+}
+@media (max-width: 900px) {
+  .container .description .info-card .text-content {
+    width: 100%;
+  }
 }
 .container .description .info-card .text-content p {
   line-height: 1.5;
@@ -265,6 +281,11 @@ footer p {
   height: 300px;
   width: 300px;
   margin: 0 auto;
+}
+@media (max-width: 900px) {
+  .container .description .info-card img {
+    margin-bottom: 5rem;
+  }
 }
 .container .description .info-card:nth-of-type(even) {
   background: #6195ED;
