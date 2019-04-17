@@ -1,17 +1,42 @@
 @tablet: ~"(max-width: 900px)";
-
+@containerbg:~"(max-width: 1350px)";
+@container1200:~"(max-width: 1200px)";
+@container1080:~"(max-width: 1080px)";
 @phone: ~"(max-width: 600px)";
 .container {
   width: 100%;
   margin: 5rem auto 0 auto;
   padding: 4rem 0 0 0;
   border-bottom: 1px solid #ccc;
+  background: url('../images/splashbg.png'); 
+  background-size: 800px;
+    background-repeat: no-repeat;
+    background-position-x: 90%;
+    background-position-y: 7%;
+@media @containerbg{
+background-size: 600px;
+background-position-x: 102%;
+    background-position-y: 16%;
 
+}  
+@media @container1200 {
+    background-size: 600px;
+    background-position-x: 120%;
+    background-position-y: 16%;
+
+}
+@media @container1080 {
+    background: white;
+}
+&.container-about{
+    background:white;
+}
   .intro {
     display: flex;
     flex-direction: column;
     margin: 9rem 3rem;
     line-height: 1.5;
+   
     h1 {
       font-size: 4rem;
       font-weight: 600;
@@ -116,10 +141,11 @@
   }
   .cta {
     display:flex;
-    margin: 50px 0;
+    padding: 50px 0;
     flex-direction: column;
     justify-content: left;
     align-items: center;
+    background: white;
     
     .text-content {
         h2{
