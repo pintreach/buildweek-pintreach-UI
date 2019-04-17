@@ -257,9 +257,10 @@ footer p {
     flex-direction: column;
   }
 }
-.container .description .info-card.team-card {
-  display: inline-flex;
-  width: 49.5%;
+@media (max-width: 600px) {
+  .container .description .info-card {
+    flex-direction: column-reverse;
+  }
 }
 .container .description .info-card .text-content {
   width: 50%;
@@ -268,7 +269,12 @@ footer p {
 }
 @media (max-width: 900px) {
   .container .description .info-card .text-content {
-    width: 100%;
+    width: 75%;
+  }
+}
+@media (max-width: 600px) {
+  .container .description .info-card .text-content {
+    width: 95%;
   }
 }
 .container .description .info-card .text-content p {
@@ -280,10 +286,12 @@ footer p {
   height: 300px;
   width: 300px;
   margin: 3rem auto;
+  border-radius: 5px;
 }
 @media (max-width: 900px) {
   .container .description .info-card img {
-    margin-bottom: 5rem;
+    width: 45%;
+    height: 45%;
   }
 }
 .container .description .info-card:nth-of-type(even) {
@@ -302,6 +310,14 @@ footer p {
 .container .description .info-card:nth-of-type(odd) {
   background: #E6FDFF;
   color: black;
+}
+.container .description .info-card:nth-of-type(odd).dev-card {
+  flex-direction: row-reverse;
+}
+@media (max-width: 600px) {
+  .container .description .info-card:nth-of-type(odd).dev-card {
+    flex-direction: column-reverse;
+  }
 }
 .container .description .info-card:nth-of-type(odd) h2 {
   color: black;
