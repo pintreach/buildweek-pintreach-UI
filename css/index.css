@@ -389,6 +389,7 @@ footer p {
   margin-top: 1rem;
   background: #E6FDFF;
   color: black;
+  border: 1px solid black;
 }
 @media (max-width: 900px) {
   .container .cta .btn {
