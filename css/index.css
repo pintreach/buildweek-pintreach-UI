@@ -279,7 +279,7 @@ footer p {
 .container .description .info-card img {
   align-self: center;
   height: 300px;
-  width: 300px;
+  max-width: 300px;
   margin: 3rem auto;
   border-radius: 5px;
 }
