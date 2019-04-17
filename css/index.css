@@ -252,11 +252,6 @@ footer p {
 .container .description .info-card {
   display: flex;
 }
-@media (max-width: 900px) {
-  .container .description .info-card {
-    flex-direction: column;
-  }
-}
 @media (max-width: 600px) {
   .container .description .info-card {
     flex-direction: column-reverse;
@@ -290,6 +285,7 @@ footer p {
 }
 @media (max-width: 900px) {
   .container .description .info-card img {
+    margin: 3em 0 0 3em;
     width: 45%;
     height: 45%;
   }
