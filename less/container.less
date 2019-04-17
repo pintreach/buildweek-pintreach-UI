@@ -1,17 +1,42 @@
 @tablet: ~"(max-width: 900px)";
-
+@containerbg:~"(max-width: 1350px)";
+@container1200:~"(max-width: 1200px)";
+@container1080:~"(max-width: 1080px)";
 @phone: ~"(max-width: 600px)";
 .container {
   width: 100%;
   margin: 5rem auto 0 auto;
   padding: 4rem 0 0 0;
   border-bottom: 1px solid #ccc;
+  background: url('../images/splashbg.png'); 
+  background-size: 800px;
+    background-repeat: no-repeat;
+    background-position-x: 90%;
+    background-position-y: 7%;
+@media @containerbg{
+background-size: 600px;
+background-position-x: 102%;
+    background-position-y: 16%;
 
+}  
+@media @container1200 {
+    background-size: 600px;
+    background-position-x: 120%;
+    background-position-y: 16%;
+
+}
+@media @container1080 {
+    background: white;
+}
+&.container-about{
+    background:white;
+}
   .intro {
     display: flex;
     flex-direction: column;
     margin: 9rem 3rem;
     line-height: 1.5;
+   
     h1 {
       font-size: 4rem;
       font-weight: 600;
@@ -41,31 +66,21 @@
     
     .info-card {
       display: flex;
-      @media @tablet {
-          flex-direction: column;
-      }
-      &.team-card{
-        display: inline-flex;
-
-        width: 49.5%;
-        // &:nth-of-type(1){
-        //     order: 1;
-            
-        //     justify-self: flex-end;
-        //     background: purple;
-        // }
-        // &::nth-of-type(2){
-        //     order: 2;
-        // } trying to get an
-    } 
+      
+      @media @phone {
+        flex-direction: column-reverse; 
+    }
+      
       
       .text-content {
         width: 50%;
         margin:  auto;
         padding: 3rem;
-        @media @tablet{
-            width: 100%;
-            
+        @media @tablet {
+            width: 75%;
+        }
+        @media @phone {
+            width: 95%;
         }
         p {
           line-height: 1.5;
@@ -75,11 +90,17 @@
       img {
         align-self: center;
         height: 300px;
-        width: 300px;
+        max-width: 300px;
         margin: 3rem auto;
+        border-radius: 5px;
         @media @tablet {
-            margin-bottom: 5rem;
+            margin: 3em;
+            width: 45%; 
+            height: 45%;
+        } @media @phone {
+            margin: 3em 3em 0 3em;
         }
+        
         
       }
       &:nth-of-type(even) {
@@ -98,6 +119,13 @@
       &:nth-of-type(odd) {
         background: @contrast2;
         color: black;
+
+        &.dev-card{
+          flex-direction: row-reverse;
+          @media @phone {
+              flex-direction: column-reverse; 
+          }
+        }
         h2 {
           color: black;
         }
@@ -113,10 +141,11 @@
   }
   .cta {
     display:flex;
-    margin: 50px 0;
+    padding: 50px 0;
     flex-direction: column;
     justify-content: left;
     align-items: center;
+    background: white;
     
     .text-content {
         h2{
