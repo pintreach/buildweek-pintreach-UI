@@ -162,6 +162,7 @@ header {
 }
 header #logo {
   max-width: 198px;
+  margin-left: 1em;
 }
 header nav {
   display: flex;
