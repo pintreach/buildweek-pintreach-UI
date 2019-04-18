@@ -1,91 +1,94 @@
 @tablet: ~"(max-width: 900px)";
-@containerbg:~"(max-width: 1350px)";
-@container1200:~"(max-width: 1200px)";
-@container1080:~"(max-width: 1080px)";
+@containerbg: ~"(max-width: 1350px)";
+@container1200: ~"(max-width: 1200px)";
+@container1080: ~"(max-width: 1080px)";
 @phone: ~"(max-width: 600px)";
 .container {
-    width: 100%;
-    margin: 5rem auto 0 auto;
-    padding: 4rem 0 0 0;
-    border-bottom: 1px solid #ccc;
-    background: url(../images/splashbg.png);
-    background-size: 800px;
-    background-repeat: no-repeat;
-    background-position-x: 90%;
-    background-position-y: 7%;
-    
-@media @containerbg{
+  width: 100%;
+  margin: 5rem auto 0 auto;
+  padding: 4rem 0 0 0;
+  border-bottom: 1px solid #ccc;
+  background: url(../images/splashbg.png);
+  background-size: 800px;
+  background-repeat: no-repeat;
+  background-position-x: 90%;
+  background-position-y: 7%;
+
+  @media @containerbg {
     background-size: 800px;
     background-position-x: 106%;
     background-position-y: 8%;
-
-}  
-@media @container1200 {
+  }
+  @media @container1200 {
     background-size: 800px;
     background-position-x: 141%;
     background-position-y: 8%;
-
-}
-@media @container1080 {
+  }
+  @media @container1080 {
     background: white;
-}
-&.container-about{
-    background:white;
-}
+  }
+  &.container-about {
+    background: white;
+  }
   .intro {
     display: flex;
     flex-direction: column;
     margin: 9rem 3rem;
     line-height: 1.5;
-   
+
     h1 {
       font-size: 4rem;
       font-weight: 600;
       padding-bottom: 5rem;
       color: black;
     }
-    p{
-        font-size: 2rem;
-        color: black;
+    p {
+      font-size: 2rem;
+      color: black;
     }
   }
   .description {
-      &.about-content{
-          display: inline-flex;
-          width: 49.5%; 
-      }
+    &.about-content {
+      display: inline-flex;
+      width: 49.5%;
+    }
     h2 {
       font-size: 2.5rem;
       font-weight: 600;
       font-style: oblique;
       margin: 20px 0;
       color: black;
-      @media @phone{
-          font-size: 2.2rem;
+      @media @phone {
+        font-size: 2.2rem;
       }
     }
-    
+
     .info-card {
       display: flex;
-      
+
       @media @phone {
-        flex-direction: column-reverse; 
-    }
-      
-      
+        flex-direction: column-reverse;
+      }
+
       .text-content {
         width: 50%;
-        margin:  auto;
+        margin: auto;
         padding: 3rem;
         @media @tablet {
-            width: 75%;
+          width: 75%;
         }
         @media @phone {
-            width: 95%;
+          width: 95%;
         }
         p {
           line-height: 1.5;
           font-size: 2rem;
+          margin-bottom: 1em;
+        }
+        a{
+            text-decoration: none;
+            font-size: 1.6rem;
+            margin: 1em .5em 0 0;
         }
       }
       img {
@@ -95,14 +98,13 @@
         margin: 3rem auto;
         border-radius: 5px;
         @media @tablet {
-            margin: 3em;
-            width: 70%; 
-            height: 45%;
-        } @media @phone {
-            margin: 3em 3em 0 3em;
+          margin: 3em;
+          width: 70%;
+          height: 45%;
         }
-        
-        
+        @media @phone {
+          margin: 3em 3em 0 3em;
+        }
       }
       &:nth-of-type(even) {
         background: @mainColor;
@@ -110,89 +112,92 @@
         h2 {
           color: @contrast2;
         }
-        p{
-            color: @contrast2;
+        p {
+          color: @contrast2;
         }
-        img{
-            box-shadow: rgba(32, 41, 50, 0.12) 0px 16px 48px;
-            }
+        a{
+            color:@contrast2;
+            
+        }
+        img {
+          box-shadow: rgba(32, 41, 50, 0.12) 0px 16px 48px;
+        }
       }
       &:nth-of-type(odd) {
         background: @contrast2;
         color: black;
 
-        &.dev-card{
+        &.dev-card {
           flex-direction: row-reverse;
           @media @phone {
-              flex-direction: column-reverse; 
+            flex-direction: column-reverse;
           }
         }
         h2 {
           color: black;
         }
-        p{
-            color: black;
+        p {
+          color: black;
         }
-        img{
-            box-shadow: rgba(32, 41, 50, 0.12) 0px 16px 48px;
+        a{
+            color:black;
+        }
+        img {
+          box-shadow: rgba(32, 41, 50, 0.12) 0px 16px 48px;
         }
       }
     }
-    
   }
   .cta {
-    display:flex;
+    display: flex;
     padding: 50px 0;
     flex-direction: column;
     justify-content: left;
     align-items: center;
     background: white;
-    
+
     .text-content {
-        h2{
-            font-size: 3rem;
-        }
-        p{
-            font-size: 2.5rem;
-        }
-      
+      h2 {
+        font-size: 3rem;
+      }
+      p {
+        font-size: 2.5rem;
+      }
+
       padding: 50px;
     }
     .btn {
-        background: @mainColor;
-        color: @contrast2;
-        padding: 2rem 4rem;
-        font-size: 2rem;
-        text-decoration: none;
-        width: 20%;
-        text-align: center;
-        align-self: center;
-        margin-left: 20%;
-
-        &.login{
-            margin-top: 1rem;
-            background: @contrast2;
-           
-            color: black;
-            border: 1px solid black;
-        }
-        
-        @media @tablet {
-            width: 50%;
-            border-radius: 10px;
-        }
-        @media @phone {
-            margin: 0 1.6rem;
-            width: 90%;
-            border-radius: 3em;
-        }
-      }
-  }
-  footer{
       background: @mainColor;
-      
+      color: @contrast2;
+      padding: 2rem 4rem;
+      font-size: 2rem;
+      text-decoration: none;
+      width: 20%;
+      text-align: center;
+      align-self: center;
+      margin-left: 20%;
+
+      &.login {
+        margin-top: 1rem;
+        background: @contrast2;
+
+        color: black;
+        border: 1px solid black;
+      }
+
+      @media @tablet {
+        width: 50%;
+        border-radius: 10px;
+      }
+      @media @phone {
+        margin: 0 1.6rem;
+        width: 90%;
+        border-radius: 3em;
+      }
+    }
+  }
+  footer {
+    background: @mainColor;
   }
 }
-// -webkit-box-shadow: 0px 0px 292px -76px rgba(251,54,64,1);
-//         -moz-box-shadow: 0px 0px 292px -76px rgba(251,54,64,1);
-//         box-shadow: 0px 0px 292px -76px rgba(251,54,64,1);
+
