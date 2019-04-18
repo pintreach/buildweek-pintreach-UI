@@ -304,6 +304,12 @@ footer p {
 .container .description .info-card .text-content p {
   line-height: 1.5;
   font-size: 2rem;
+  margin-bottom: 1em;
+}
+.container .description .info-card .text-content a {
+  text-decoration: none;
+  font-size: 1.6rem;
+  margin: 1em 0.5em 0 0;
 }
 .container .description .info-card img {
   align-self: center;
@@ -334,6 +340,9 @@ footer p {
 .container .description .info-card:nth-of-type(even) p {
   color: #E6FDFF;
 }
+.container .description .info-card:nth-of-type(even) a {
+  color: #E6FDFF;
+}
 .container .description .info-card:nth-of-type(even) img {
   box-shadow: rgba(32, 41, 50, 0.12) 0px 16px 48px;
 }
@@ -353,6 +362,9 @@ footer p {
   color: black;
 }
 .container .description .info-card:nth-of-type(odd) p {
+  color: black;
+}
+.container .description .info-card:nth-of-type(odd) a {
   color: black;
 }
 .container .description .info-card:nth-of-type(odd) img {
