@@ -1,4 +1,9 @@
 @tablet: ~"(max-width: 900px)";
+.intro-tabs{
+    @media @tablet {
+        display: none;
+      }
+
 .tabs {
   background: @contrast2;
   width: 50%;
@@ -13,9 +18,7 @@
   margin: 3em auto 0 auto;
 
   box-shadow: rgba(32, 41, 50, 0.12) 0px 4px 5px;
-  @media @tablet {
-    display: none;
-  }
+  
 
   .tabs-items {
     width: 100%;
@@ -60,4 +63,5 @@
     z-index: 0;
     color: black;
   }
+}
 }
