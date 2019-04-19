@@ -9,6 +9,8 @@ class TabLink {
       this.newItem.select();
       this.select();
     });
+   
+   
   }
 
   select() {
@@ -37,3 +39,22 @@ class TabItem {
 //gather links and create new objects
 links = document.querySelectorAll(".tabs-link");
 links.forEach((link, index) => new TabLink(link, index));
+
+
+const featureBreak = document.querySelector('.intro-tabs')
+const tabHolder = document.querySelector('.tabs-items');
+const p = document.createElement('p');     
+p.textContent = 'New Features are coming your way! Sign up Below!';    
+p.setAttribute('id','helper');  
+
+
+tabHolder.addEventListener('mouseover', ()=> featureBreak.appendChild(p) );
+
+tabHolder.addEventListener('mouseleave', ()=> removeTool(document.querySelector('#helper')));
+
+const removeTool = (feature)=> feature.remove();
+
+
+
+
+
