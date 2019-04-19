@@ -30,10 +30,11 @@
   &.container-about {
     background: white;
   }
+
   .intro {
     display: flex;
     flex-direction: column;
-    margin: 9rem 3rem;
+    margin: 11rem 3rem;
     line-height: 1.5;
 
     h1 {
@@ -47,6 +48,7 @@
       color: black;
     }
   }
+
   .description {
     &.about-content {
       display: inline-flex;
@@ -62,7 +64,9 @@
         font-size: 2.2rem;
       }
     }
-
+    .intro-tabs {
+      padding-bottom: 4em;
+    }
     .info-card {
       display: flex;
 
@@ -85,10 +89,20 @@
           font-size: 2rem;
           margin-bottom: 1em;
         }
-        a{
-            text-decoration: none;
-            font-size: 1.6rem;
-            margin: 1em .5em 0 0;
+        a {
+          text-decoration: none;
+          font-size: 1.6rem;
+          margin: 1em 0.5em 0 0;
+        }
+        a.social {
+          box-shadow: 0 0.3px 0.3px rgba(0, 0, 0, 0.1), 0 0.2px;
+          padding: 10px 2px 2px 2px;
+        }
+        a.social:hover {
+          box-shadow: 0 7px 20px rgba(0, 0, 0, 0.25),
+            0 5px 10px rgba(0, 0, 0, 0.22);
+          transition: all 0.3s;
+          transform: translateZ(3px);
         }
       }
       img {
@@ -115,9 +129,8 @@
         p {
           color: @contrast2;
         }
-        a{
-            color:@contrast2;
-            
+        a {
+          color: @contrast2;
         }
         img {
           box-shadow: rgba(32, 41, 50, 0.12) 0px 16px 48px;
@@ -139,8 +152,8 @@
         p {
           color: black;
         }
-        a{
-            color:black;
+        a {
+          color: black;
         }
         img {
           box-shadow: rgba(32, 41, 50, 0.12) 0px 16px 48px;
@@ -148,6 +161,7 @@
       }
     }
   }
+
   .cta {
     display: flex;
     padding: 50px 0;
@@ -196,8 +210,13 @@
       }
     }
   }
+  #tab-feature {
+    text-align: center;
+    margin: 5em 0 0 0;
+    font-size: 2.4rem;
+  }
   footer {
     background: @mainColor;
+    margin-top: 2em;
   }
 }
-
