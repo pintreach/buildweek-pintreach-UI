@@ -249,7 +249,7 @@ footer p {
 .container .intro {
   display: flex;
   flex-direction: column;
-  margin: 9rem 3rem;
+  margin: 11rem 3rem;
   line-height: 1.5;
 }
 .container .intro h1 {
