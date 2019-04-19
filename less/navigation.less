@@ -1,47 +1,44 @@
 // Navigation Styles here
 //escaped values
-@tablet: ~'(max-width: 815px)';
-@navBar: ~'(max-width: 640px)';
-header{
+@tablet: ~"(max-width: 815px)";
+@navBar: ~"(max-width: 640px)";
+header {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  flex-wrap: wrap;
+  background: @mainColor;
+  //sticky
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+  @media @navBar {
+    align-self: center;
+    justify-content: center;
+  }
+
+  #logo {
+    max-width: 198px;
+    margin-left: 1em;
+  }
+  nav {
     display: flex;
-    justify-content: space-between;
-    margin: 0;
+    padding: 16px;
     flex-wrap: wrap;
-    background: @mainColor;
-    //sticky
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 2;
+    justify-content: space-around;
     @media @navBar {
-        align-self: center;
-        justify-content: center;
-     
+      display: none;
     }
+    a {
+      padding: 0 2rem;
+      align-self: center;
+      color: @contrast2;
+      font-size: 2rem;
+    }
+  }
 
-    #logo{
-        max-width: 198px;
-        margin-left: 1em;
-        
-    }
-    nav{
-        display: flex;
-        padding: 16px;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        @media @navBar {
-            display: none;
-
-        }
-        a{
-            padding:0 2rem;
-            align-self: center;
-            color: @contrast2;
-            font-size: 2rem;
-        }
-    }
-    
-    h1{
-        font-size: 2rem;
-    }
+  h1 {
+    font-size: 2rem;
+  }
 }
